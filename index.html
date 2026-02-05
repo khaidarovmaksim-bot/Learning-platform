@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Урок французского</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Serif&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="start-screen">
+  <h1>Bienvenue à notre leçon!</h1>
+  <p>Aujourd'hui on nous attend quelque chose très intéressante...</p>
+  <button id="start-btn"><b>On commence!</b></button>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h1>Nos plans pour la leçon</h1>
+    
+    <div class="buttons">
+    <button id="intro-btn" class="section-btn" data-target="intro">Salutation</button>
+      <button class="section-btn" data-target="first">Réviser la conjugaison des verbes du 1er et du 2e groupe</button>
+      <button class="section-btn" data-target="second">Introduire les verbes du 3e groupe</button>
+      <button class="section-btn" data-target="third">Faire des exercices pour nous entraîner</button>
+      <button class="section-btn" data-target="fourth">Pratiquer et communiquer ensemble</button>
+      <button class="section-btn" data-target="fifth">Faire le bilan</button>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <div class="page" id="intro">
+        <h1>Petites questions pour faire connaissance</h1>
+        <div class="questions">
+            <div class="question-card">
+                <p>-Ça va?</p>
+            </div>
+            <div class="question-card">
+                <p>-Comment tu t'appelles?</p>
+            </div>
+            <div class="question-card">
+                <p>-Tu vas bien aujourd'hui?</p>
+            </div>
+            <div class="question-card">
+                <p>-Tu parles français?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page" id="first">
+
+      <h1>Règles générales</h1>
+      <h2 class="group-title">1er groupe</h2>
+
+      <div class="cards-grid">
+
+        <div class="card">
+          <h4 class="verb-title">Parler (говорить)</h4>
+          <p class="rule-text">
+            je parl<b><i>e;</i></b><br>
+            tu parl<i><b>es;</b></i><br>
+            il/elle/on parl<b><i>e;</i></b><br>
+            nous parl<b><i>ons;</i></b><br>
+            vous parl<i><b>ez;</b></i><br>
+            ils/elles parl<i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Aimer (любить)</h4>
+          <p class="rule-text">
+            j’aim<b><i>e;</i></b><br>
+            tu aim<i><b>es;</b></i><br>
+            il/elle/on aim<i>e;</i></b><br>
+            nous aim<b><i>ons;</i></b><br>
+            vous aim<i><b>ez;</b></i><br>
+            ils/elles aim<i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Regarder (смотреть, просматривать)</h4>
+          <p class="rule-text">
+            je regard<b><i>e;</i></b><br>
+            tu regard<i><b>es;</b></i><br>
+            il/elle/on regard<b><i>e;</i></b><br>
+            nous regard<b><i>ons;</i></b><br>
+            vous regard<i><b>ez;</b></i><br>
+            ils/elles regard<i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Étudier (изучать, исследовать)</h4>
+          <p class="rule-text">
+            j’étudi<b><i>e;</i></b><br>
+            tu étudi<i><b>es;</b></i><br>
+            il/elle/on étudi<b><i>e;</i></b><br>
+            nous étudi<b><i>ons;</i></b><br>
+            vous étudi<i><b>ez;</b></i><br>
+            ils/elles étudi<i><b>ent;</b></i>
+          </p>
+        </div>
+
+      </div>
+
+      <h3 class="exceptions"><b>Exceptions!</b></h3>
+
+      <div class="cards-grid">
+
+        <div class="card">
+          <h4 class="verb-title">Manger (есть, кушать) (= voyager - путешествовать)</h4>
+          <p class="rule-text">
+            je mang<b><i>e;</i></b><br>
+            tu mang<i><b>es;</b></i><br>
+            il/elle/on mang<b><i>e;</i></b><br>
+            nous mang<u><b>e</b></u><b><i>ons;</i></b><br>
+            vous mang<i><b>ez;</b></i><br>
+            ils/elles mang<i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Envoyer</h4>
+          <p class="rule-text">
+            j’envo<u><b>i</b></u><b><i>e;</i></b><br>
+            tu envo<u><b>i</b></u><i><b>es;</b></i><br>
+            il/elle/on envo<u><b>i</b></u><b><i>e;</i></b><br>
+            nous envoy<b><i>ons;</i></b><br>
+            vous envoy<i><b>ez;</b></i><br>
+            ils/elles envo<u><b>i</b></u><i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Acheter (покупать)</h4>
+          <p class="rule-text">
+            j’ach<u><b>è</b></u>t<b><i>e;</i></b><br>
+            tu ach<u><b>è</b></u>t<i><b>es;</b></i><br>
+            il/elle/on ach<u><b>è</b></u>t<b><i>e;</i></b><br>
+            nous achet<b><i>ons;</i></b><br>
+            vous achet<i><b>ez;</b></i><br>
+            ils/elles ach<u><b>è</b></u>t<i><b>ent;</b></i>
+          </p>
+        </div>
+
+        <div class="card">
+          <h4 class="verb-title">Répéter (повторять)</h4>
+          <p class="rule-text">
+            je rép<u><b>è</b></u>t<b><i>e;</i></b><br>
+            tu rép<u><b>è</b></u>t<i><b>es;</b></i><br>
+            il/elle/on rép<u><b>è</b></u>t<b><i>e;</i></b><br>
+            nous répét<b><i>ons;</i></b><br>
+            vous répét<i><b>ez;</b></i><br>
+            ils/elles rép<u><b>è</b></u>t<i><b>ent;</b></i>
+          </p>
+          </div>
+        
+      </div>
+    <p class="training">Essayez-vous de conjuguer ces verbes selon les règles: <b>compter, passer, juger, appeler</b></p>
+    <h3 class="group-title">2e groupe</h3>
+    <div class="cards-grid">
+        <div class="card2">
+            <h4 class="verb-title">Finir (заканчивать)</h4>
+            <p class="rule-text">
+                je fin<i><b>is;</b></i><br>
+                tu fin<i><b>is;</b></i><br>
+                il/elle/on je fin<i><b>it;</b></i><br>
+                nous fin<i>iss</i><i><b>ons;</b></i><br>
+                vous fin<i>iss</i><i><b>ez;</b></i><br>
+                ils/elles fin<i>iss</i><i><b>ent;</b></i><br>
+            </p>
+        </div>
+        <div class="card2">
+            <h4 class="verb-title">Choisir (выбирать)</h4>
+            <p class="rule-text">
+                je chois<i><b>is;</b></i><br>
+                tu chois<i><b>is;</b></i><br>
+                il/elle/on chois<i><b>it;</b></i><br>
+                nous chois<i>iss</i><i><b>ons;</b></i><br>
+                vous chois<i>iss</i><i><b>ez;</b></i><br>
+                ils/elles chois<i>iss</i><i><b>ent;</b></i><br>
+            </p>
+        </div>
+    </div>
+    <p class="training">Essayez-vous de conjuguer ces verbes selon les règles: <b>réfléchir, maigrir, avertir, mûrir</b></p>
+    </div>
+
+    <div class="page" id="second">
+        <h1>L'introduction des verbes du 3e groupe</h1>
+        <p class="theory">Les verbes du 3e groupe sont <b>irréguliers</b>, mais aussi très importants pour la communication quotidienne en français. Au-dessous de la page nous pouvons observer les verbes du 3e groupe qui sont vraiment inévitables et essentiels pour la maîtrise de la langue française.</p>
+        <div class="cards-grid">
+            <div class="card3">
+                <h4 class="verb-title">Être (быть)</h4>
+                <p class="rule-text">
+                    je suis;<br>
+                    tu es;<br>
+                    il/elle/on est;<br>
+                    nous sommes;<br>
+                    vous êtes;<br>
+                    ils/elles sont;
+                </p>
+            </div>
+            <div class="card3">
+                <h4 class="verb-title">Avoir (иметь)</h4>
+                <p class="rule-text">
+                    j'ai;<br>
+                    tu as;<br>
+                    il/elle/on a;<br>
+                    nous avons;<br>
+                    vous avez;<br>
+                    ils/elles ont;<br>
+                </p>
+            </div>
+            <div class="card3">
+                <h4 class="verb-title">Aller (ходить)</h4>
+                <p class="rule-text">
+                    je vais;<br>
+                    tu vas;<br>
+                    il/elle/on va;<br>
+                    nous allons;<br>
+                    vous allez;<br>
+                    ils/elles vont;<br>
+                </p>
+            </div>
+            <div class="card3">
+                <h4 class="verb-title">Faire (делать)</h4>
+                <p class="rule-text">
+                    je fais;<br>
+                    tu fais;<br>
+                    il/elle/on fait;<br>
+                    nous faisons;<br>
+                    vous faites;<br>
+                    ils/elles font;<br>
+                </p>
+            </div>
+        </div>
+        <div class="theory">
+            <p>Quelques verbes semblent familiers, n'est-ce pas? Il y a plein de phrases avec laquelles on parle constamment. Observez:</p>
+            
+            <ul>
+                <li>J'ai 22 ans.</li>
+                <li>Elle est russe.</li>
+                <li>Tu fais du sport.</li>
+                <li>Nous allons à Paris.</li>
+                </ul>
+            <p>Ces verbes sont très généralisés parmi les francophones, n'importe quel niveau, parce que il est néсessaire de les utiliser presque toujours, en parlant français. Malgré l'absence de modèles évidents, on peut y grouper selon quelques règles intéressantes. Je voudrais vous montrer la magie de la langue.</p>
+            </div>
+        <div class="cards-grid">
+            <div class="card3">
+                <h4 class="verb-title">Venir (приходить)</h4>
+                <p class="rule-text">
+                    je viens;<br>
+                    tu viens;<br>
+                    il/elle/on vient;<br>
+                    nous venons;<br>
+                    vous venez;<br>
+                    ils/elles viennent;
+                </p>
+            </div>
+            
+            <div class="card3">
+                <p class="rule-text">
+                    devenir (становиться);<br>
+                    convenir (соглашаться);<br>
+                    se souvenir (помнить);<br>
+                    revenir (возвращаться);<br>
+                </p>
+            </div>
+            <p class="theory">Au-dessus nous pouvons faire connaissance avec la conjugaison du verbe <b>venir</b> et à droite il y a des verbes qui ont la conjugaison similaire.</p>
+            <p class="theory">Les verbes à droite sont conjugées comme <i>venir</i>, par exemple, <b>ils deviennent, </b><b>je me souviens, </b><b>elle revient</b> etc.</p>
+        </div>
+        <p class="theory">Ce n'est pas le seul cas, quand les verbes sont presque mêmes.</p>
+        <p class="theory">Voici ma règle adorée:</p>
+        <div class="cards-grid">
+            <div class="card3">
+                <h4 class="verb-title">Vouloir (хотеть)</h4>
+                <p class="rule-text">
+                    je veux;<br>
+                    tu veux;<br>
+                    il/elle/on veut;<br>
+                    nous voulons;<br>
+                    vous voulez;<br>
+                    ils/elles veulent;
+                </p>
+            </div>
+            <div class="card3">
+                <h4 class="verb-title">Pouvoir (мочь)</h4>
+                <p class="rule-text">
+                    je peux;<br>
+                    tu peux:<br>
+                    il/elle/on peut;<br>
+                    nous pouvons;<br>
+                    vous pouvez;<br>
+                    ils/elles peuvent;
+                </p>
+            </div>
+        </div>
+        <p class="theory"><b>Vouloir c'est pouvoir vraiment!</b></p>
+        <p class="theory">La situation avec le verbe <b>tenir</b> est la même comme <b>venir.</b> Voici la règle:</p>
+        <div class="cards-grid">
+            <div class="card3">
+                <h4 class="verb-title">Tenir (держать)</h4>
+                <p class="rule-text">
+                    je tiens;<br>
+                    tu tiens;<br>
+                    il/elle/on tient;<br>
+                    nous tenons;<br>
+                    vous tenez;<br>
+                    ils/elles tiennent;
+                </p>
+            </div>
+            <div class="card3">
+                <p class="rule-text">
+                    obtenir(получить, добиться);<br>
+                    maintenir (сохранять, обеспечивать);
+                    soutenir (поддерживать);
+                </p>
+            </div>
+        </div>
+        <p class="theory">Et ces verbes ont la conjugaison similaire: <b>j'obtiens,</b> <b>elle soutient,</b> <b>vous maintenez.</b></p>
+        <p class="training">Essayez-vous de conjuger les verbes <i>appartenir, advenir.</i></p>
+        
+        <p class="theory"><b>Le 3e groupe de verbes français est le plus difficile à apprendre et à rappeler, mais il est néсessaire d'y faire. En futur nous vraiment reviendrons au ce groupe, mais pour aujourd'hui c'est tout. Et maintenant nous passons à la partie suivante!</b></p>
+    </div>
+    <div class="page" id="third">
+        <h1>Faisons les exercices!</h1>
+        <div class="exercise">
+            <p><b> I. Rassemble la phrase:</b></p>
+            <p>1. Il/faire/des exercices</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+            
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+            
+            <p>2. Je/aller/à l'école</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+            
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>3. Nous/partager/des contenus</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>4. Marie/aimer/dessiner</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>5. Mes parents/arriver/à Moscou</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>6. Vous/réfléchir/à la politique</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+            
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>7. Tu/choisir/la bonne réponse</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>8. Anna/venir/un peu plus tard</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>9. Vous/me/soutenir/dans les moments difficiles</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+            
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+
+            <p>10. Olya/obtenir/les connaissances</p>
+            <input class="sentence-input" placeholder="Écris ici-bas">
+            
+            <button class="check-sentence">Vérifier</button>
+            <p class="sentence-result"></p>
+            
+            <button id="reset-ex1">Refaire</button>
+
+        </div>
+        <div class="exercise">
+            <p><b>II. Choisis la bonne terminaison:</b></p>
+
+            <div class="ending-task">
+                1. Il parl
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="es">es</option>
+                    <option value="ent">ent</option>
+                    <option value="e">e</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                2. Je t'aim
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="es">es</option>
+                    <option value="ons">ons</option>
+                    <option value="e">e</option>
+                </select>
+            </div>
+               <div class="ending-task">
+                3. Vous mainten
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="ez">ez</option>
+                    <option value="ont">ont</option>
+                    <option value="ent">ent</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                4. Clement revien
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="ont">ont</option>
+                    <option value="t">t</option>
+                    <option value="ent">ent</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                5. Tu me soutien
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="es">es</option>
+                    <option value="ent">ent</option>
+                    <option value="s">s</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                6. Elle fini
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="t">t</option>
+                    <option value="ez">ez</option>
+                    <option value="e">e</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                7. On fai
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="s">s</option>
+                    <option value="et">et</option>
+                    <option value="t">t</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                8. Tu peu
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="x">x</option>
+                    <option value="s">s</option>
+                    <option value="e">e</option>
+                </select>
+            </div>
+            <div class="ending-task">
+                9. Elles v
+                <select class="ending-select">
+                    <option value="">---</option>
+                    <option value="ont">ont</option>
+                    <option value="ent">ent</option>
+                    <option value="e">e</option>
+                </select>
+            </div>
+            <button id="check-ex2">Vérifier</button>
+            <button id="reset-ex2">Refaire</button>
+            <p id="result-ex2"></p>
+        </div>
+        <div class="exercise">
+            <p><b>Classe les verbes par groupe:</b></p>
+            <div class="verbs">
+                <div class="verb" draggable="true">Contester</div>
+                <div class="verb" draggable="true">Naître</div>
+                <div class="verb" draggable="true">Mourir</div>
+                <div class="verb" draggable="true">Rester</div>
+                <div class="verb" draggable="true">Battre</div>
+                <div class="verb" draggable="true">Voir</div>
+                <div class="verb" draggable="true">Jeter</div>
+                <div class="verb" draggable="true">Peindre</div>
+                <div class="verb" draggable="true">Fournir</div>
+                <div class="verb" draggable="true">Atterir</div>
+                <div class="verb" draggable="true">Garder</div>
+                <div class="verb" draggable="true">Résoudre</div>
+            </div>
+            <div class="groups">
+
+                <div class="drop-zone" data-group="1">
+                    1er groupe
+                </div>
+                <div class="drop-zone" data-group="2">
+                    2e groupe
+                </div>
+                <div class="drop-zone" data-group="3">
+                    3e groupe
+                </div>
+                
+            </div>
+            <p id="result-ex3"></p>
+            <button id="reset-ex3">Refaire</button>
+        </div>
+    </div>
+    <div class="page" id="fourth">
+        <h1>La communication!</h1>
+        <p class="theory">
+            <b>I. Raconte une petite histoire, en utilisant les verbes lesquels nous avons découvert aujourd'hui.</b><br>
+            <b>II. Poser quelques questions avec ces verbes.</b>
+        </p>
+        <p>Les conseils:</p>
+        <ul>
+            <li>Que? Qui? Est-ce que tu...? - ce sont les formes des <b>questions</b> simples</li>
+            <li><i>D'habitude</i> je..., <i>parfois</i> elle..., nous faisons ...<i>toujours</i> - c'est une <b>période</b> de vos actions. </li>
+        </ul>
+    </div>
+    <div class="page" id="fifth">
+        <h1>Notre bilan</h1>
+        <div class="card">
+        <p class="theory"><b>Aujourd'hui nous avons fait:</b></p>
+        <ol>
+            <li>La connaissance avec les verbes français;</li>
+            <li>La découverte du 3e groupe - c'est le plus difficile!;</li>
+            <li>La pratique avec nouvelles connaissances;</li>
+            <li>Beaucoup de plaisir!!</li>
+        </ol>
+        </div>
+        <p class="theory">C'était une expérience vraiment merveiileuse! Comment allez-vous? Partagez vos impressions!</p>
+    </div>
+    
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+    <div class="finish-wrapper">
+        <button id="final-btn">Terminer la leçon</button>
+    </div>
+    
+    
+    <div class="page-number">
+      <span id="page-counter"><b>1</b></span>
+      </div>
+    
+  </main>
+</div>
+<div id="final-screen">
+    <h1>Bien joué!</h1>
+    <h1>Merci bien pour votre attention et à bientôt!</h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
